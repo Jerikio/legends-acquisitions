@@ -3,6 +3,7 @@ import { Link, useLocation } from "@builder.io/qwik-city";
 import { MENU } from "~/constants";
 import Logo from "./icons/logo.webp";
 import Burger from "./icons/burger";
+import Close from "./icons/close";
 
 const menuClassesDefault = [
   "hidden",
@@ -30,17 +31,20 @@ const visibleClasses = [
   "gap-2",
   "text-xs",
   "md:flex",
-  "absolute",
+  "fixed",
   "left-0",
   "right-0",
+  "top-0",
+  "bottom-0",
   "animate-slide-in",
   "bg-black",
-  "max-w-sm",
+  "max-w-screen",
   "h-screen",
   "z-10",
   "overflow-y-auto",
   "shadow-md",
   "p-4",
+  "sm:max-w-sm",
 ];
 
 const visibleInnerMenuClasses = [
@@ -95,7 +99,7 @@ export default component$(() => {
   );
 
   return (
-    <header class="bg-black pt-4 pb-4 relative">
+    <header class="bg-black pt-4 pb-4">
       <div class="container mx-auto flex justify-between">
         <div>
           <a href="/" title="Legends Acquisitions">
@@ -115,6 +119,12 @@ export default component$(() => {
         </div>
 
         <div class={menuClasses}>
+          <div class="flex items-center text-white mb-4 justify-end md:hidden">
+            <button onClick$={handleClick} aria-label="Toggle Menu">
+              <Close />
+            </button>
+          </div>
+
           <a
             href="mailto:legends.acquisitions@proton.me"
             class="transition-colors text-primary-400 hover:text-primary-300"
