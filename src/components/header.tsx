@@ -109,7 +109,7 @@ export default component$(() => {
         </div>
 
         <div class="flex items-center text-white md:hidden">
-          <button onClick$={handleClick} name="Toggle Menu">
+          <button onClick$={handleClick} aria-label="Toggle Menu">
             <Burger />
           </button>
         </div>
