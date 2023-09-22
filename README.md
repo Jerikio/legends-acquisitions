@@ -79,3 +79,16 @@ See our full integration guides [here](https://www.builder.io/c/docs/developers)
 Also, when you push your integration to production, go back and update your preview URL to your production URL so now anyone on your team can visuall create content in your Qwik app!
 
 Also, to integrate structured data, see [this guide](https://www.builder.io/c/docs/integrate-cms-data)
+
+## Node Server
+
+This app has a minimal zero-dependencies server. Using the built-in `http.createServer` API.
+This should be faster and less overhead than Express or other frameworks.
+
+After running a full build, you can preview the build using the command:
+
+```
+npm run serve
+```
+
+Then visit [http://localhost:8080/](http://localhost:8080/)
