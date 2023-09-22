@@ -1,5 +1,7 @@
-import type { RegisteredComponent } from "@builder.io/sdk-qwik";
-import Counter from "./counter/counter";
+import { type RegisteredComponent } from "@builder.io/sdk-qwik";
+import button from "./button";
+import FacebookIcon from "./icons/Facebook";
+import linkedin from "./icons/linkedin";
 
 /**
  * This array is used to integrate custom components within Builder.
@@ -13,13 +15,32 @@ import Counter from "./counter/counter";
  */
 export const CUSTOM_COMPONENTS: RegisteredComponent[] = [
   {
-    component: Counter,
-    name: "Counter",
+    name: "CustomButton",
+    component: button,
     inputs: [
       {
-        name: "initialValue",
-        type: "number",
+        type: "string",
+        name: "text",
+        defaultValue: "Click me!",
+      },
+      {
+        type: "string",
+        name: "color",
+        enum: ["default", "primary", "secondary", "black"],
+        defaultValue: "default",
+      },
+      {
+        type: "string",
+        name: "href",
       },
     ],
+  },
+  {
+    name: "FacebookIcon",
+    component: FacebookIcon,
+  },
+  {
+    name: "LinkedInIcon",
+    component: linkedin,
   },
 ];
