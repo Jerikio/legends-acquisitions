@@ -109,7 +109,7 @@ export default component$(() => {
         </div>
 
         <div class="flex items-center text-white md:hidden">
-          <button onClick$={handleClick}>
+          <button onClick$={handleClick} name="Toggle Menu">
             <Burger />
           </button>
         </div>
