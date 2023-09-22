@@ -22,7 +22,7 @@ export default component$(() => {
           </div>
           <div class="flex-1">
             <nav class="flex flex-col gap-4">
-              <span class="text-2xl">Quick links</span>
+              <span class="text-2xl font-header">Quick links</span>
               <ul class="flex flex-col gap-3 text-sm text-slate-300">
                 {MENU.map((item) => (
                   <li key={item.content}>
@@ -38,7 +38,7 @@ export default component$(() => {
             </nav>
           </div>
           <div class="flex-1 flex flex-col gap-4">
-            <span class="text-2xl">Contact Us</span>
+            <span class="text-2xl font-header">Contact Us</span>
             <ul class="flex flex-col gap-3 text-sm text-slate-300">
               <li
                 class={`border-b-2 transition-colors border-transparent flex gap-2`}

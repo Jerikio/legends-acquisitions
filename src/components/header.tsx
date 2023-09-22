@@ -50,7 +50,6 @@ const visibleClasses = [
 const visibleInnerMenuClasses = [
   "uppercase",
   "flex",
-  "gap-4",
   "m-0",
   "p-0",
   "flex-col",
@@ -145,7 +144,7 @@ export default component$(() => {
               <li key={item.content}>
                 <Link
                   href={item.href}
-                  class={`pt-4 pb-4 block border-b-2 transition-colors border-transparent hover:border-warning-500 hover:text-white pointer-events-auto ${
+                  class={`pt-4 pb-4 block text-base border-b-2 transition-colors border-transparent hover:border-warning-500 hover:text-white pointer-events-auto ${
                     location.url.pathname === item.href
                       ? "border-warning-500 text-white"
                       : null

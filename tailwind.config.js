@@ -74,6 +74,9 @@ module.exports = {
           "100%": { transform: "translateX(-100%)" },
         },
       },
+      fontFamily: {
+        header: ["Michroma", "sans-serif"],
+      },
     },
   },
   plugins: [],
