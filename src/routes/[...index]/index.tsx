@@ -57,5 +57,11 @@ export const head: DocumentHead = ({ resolveValue }) => {
   const builderContent = resolveValue(useBuilderContent);
   return {
     title: builderContent?.data?.title,
+    meta: [
+      {
+        name: "description",
+        content: builderContent?.data?.description,
+      },
+    ],
   };
 };
