@@ -1,6 +1,6 @@
 import { type RegisteredComponent } from "@builder.io/sdk-qwik";
 import button from "./button";
-import FacebookIcon from "./icons/Facebook";
+import FacebookIcon from "./icons/facebook";
 import linkedin from "./icons/linkedin";
 
 /**
