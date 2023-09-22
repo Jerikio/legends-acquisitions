@@ -2,6 +2,7 @@ import { type RegisteredComponent } from "@builder.io/sdk-qwik";
 import button from "./button";
 import FacebookIcon from "./icons/facebook";
 import linkedin from "./icons/linkedin";
+import contactForm from "./contact-form";
 
 /**
  * This array is used to integrate custom components within Builder.
@@ -42,5 +43,9 @@ export const CUSTOM_COMPONENTS: RegisteredComponent[] = [
   {
     name: "LinkedInIcon",
     component: linkedin,
+  },
+  {
+    name: "ContactForm",
+    component: contactForm,
   },
 ];
