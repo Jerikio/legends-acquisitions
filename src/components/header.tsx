@@ -106,8 +106,16 @@ export default component$(() => {
             <img
               src={Logo}
               alt="Legends Acquisitions Logo"
+              width="40"
+              height="40"
+              class="md:hidden"
+            />
+            <img
+              src={Logo}
+              alt="Legends Acquisitions Logo"
               width="80"
               height="80"
+              class="hidden md:block"
             />
           </a>
         </div>
