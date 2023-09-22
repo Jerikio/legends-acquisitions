@@ -10,7 +10,7 @@ export default component$(() => {
   return (
     <footer class="bg-black text-white">
       <div class="container mx-auto pt-12 pb-4 flex flex-col gap-8">
-        <div class="flex">
+        <div class="flex flex-col gap-8 md:flex-row">
           <div class="flex-1">
             <img
               title="Legends Acquisitions"
@@ -70,7 +70,7 @@ export default component$(() => {
           </div>
         </div>
 
-        <div class="border-t border-transparent border-t-white pt-3 flex justify-between text-xs text-slate-300">
+        <div class="border-t border-transparent border-t-white pt-3 flex justify-between text-xs text-slate-300 flex-col gap-4 md:flex-row text-center">
           <span>
             Copyright {new Date().getFullYear()} &copy; Legends Acquisitions.
             All rights reserved
