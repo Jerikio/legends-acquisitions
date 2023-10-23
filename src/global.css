@@ -14,23 +14,3 @@ html {
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
 }
-
-.container {
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: theme(spacing.4);
-  padding-right: theme(spacing.4);
-}
-
-.p-8 {
-  padding: theme(spacing.8);
-}
-
-.pl-0 {
-  padding-left: 0;
-}
-
-.pr-0 {
-  padding-right: 0;
-}
