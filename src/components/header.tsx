@@ -1,59 +1,59 @@
-import { $, component$, useSignal, useOnWindow } from "@builder.io/qwik";
-import { Link, useLocation } from "@builder.io/qwik-city";
-import { MENU } from "~/constants";
-import Logo from "./icons/logo.webp";
-import Burger from "./icons/burger";
-import Close from "./icons/close";
+import { $, component$, useSignal, useOnWindow } from '@builder.io/qwik';
+import { Link, useLocation } from '@builder.io/qwik-city';
+import { MENU } from '~/constants';
+import Logo from './icons/logo.webp';
+import Burger from './icons/burger';
+import Close from './icons/close';
 
 const menuClassesDefault = [
-  "hidden",
-  "flex-col",
-  "text-slate-300",
-  "justify-end",
-  "items-end",
-  "gap-2",
-  "text-xs",
-  "md:flex",
+  'hidden',
+  'flex-col',
+  'text-slate-300',
+  'justify-end',
+  'items-end',
+  'gap-2',
+  'text-xs',
+  'md:flex',
 ];
 const innerMenuClassesDefault = [
-  "uppercase",
-  "flex",
-  "gap-4",
-  "items-end",
-  "m-0",
-  "p-0",
+  'uppercase',
+  'flex',
+  'gap-4',
+  'items-end',
+  'm-0',
+  'p-0',
 ];
 const visibleClasses = [
-  "flex-col",
-  "text-slate-300",
-  "justify-end",
-  "items-end",
-  "gap-2",
-  "text-xs",
-  "md:flex",
-  "fixed",
-  "left-0",
-  "right-0",
-  "top-0",
-  "bottom-0",
-  "animate-slide-in",
-  "bg-black",
-  "max-w-screen",
-  "h-screen",
-  "z-10",
-  "overflow-y-auto",
-  "shadow-md",
-  "p-4",
-  "sm:max-w-sm",
+  'flex-col',
+  'text-slate-300',
+  'justify-end',
+  'items-end',
+  'gap-2',
+  'text-xs',
+  'md:flex',
+  'fixed',
+  'left-0',
+  'right-0',
+  'top-0',
+  'bottom-0',
+  'animate-slide-in',
+  'bg-black',
+  'max-w-screen',
+  'h-screen',
+  'z-10',
+  'overflow-y-auto',
+  'shadow-md',
+  'p-4',
+  'sm:max-w-sm',
 ];
 
 const visibleInnerMenuClasses = [
-  "uppercase",
-  "flex",
-  "m-0",
-  "p-0",
-  "flex-col",
-  "mt-4",
+  'uppercase',
+  'flex',
+  'm-0',
+  'p-0',
+  'flex-col',
+  'mt-4',
 ];
 
 export default component$(() => {
@@ -65,19 +65,19 @@ export default component$(() => {
     menuClasses.value = visibleClasses;
     innerMenuClasses.value = visibleInnerMenuClasses;
 
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = 'hidden';
   });
 
   const hideMenu = $(() => {
     menuClasses.value = menuClassesDefault;
     innerMenuClasses.value = innerMenuClassesDefault;
 
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = 'auto';
   });
 
   const handleClick = $(() => {
     // Toggle visibility of menu
-    const hidden = menuClasses.value.indexOf("hidden");
+    const hidden = menuClasses.value.indexOf('hidden');
     if (hidden > -1) {
       showMenu();
     } else {
@@ -86,15 +86,15 @@ export default component$(() => {
   });
 
   useOnWindow(
-    "resize",
+    'resize',
     $(() => {
       if (window.innerWidth >= 768) {
-        const hidden = menuClasses.value.indexOf("hidden");
+        const hidden = menuClasses.value.indexOf('hidden');
         if (hidden === -1) {
           hideMenu();
         }
       }
-    })
+    }),
   );
 
   return (
@@ -133,10 +133,10 @@ export default component$(() => {
           </div>
 
           <a
-            href="mailto:legends.acquisitions@proton.me"
+            href="mailto:info@legendsacquisitions.com"
             class="transition-colors text-primary-400 hover:text-primary-300"
           >
-            legends.acquisitions@proton.me
+            info@legendsacquisitions.com
           </a>
 
           <ul class={innerMenuClasses}>
@@ -146,7 +146,7 @@ export default component$(() => {
                   href={item.href}
                   class={`pt-4 pb-4 block text-base border-b-2 transition-colors border-transparent hover:border-warning-500 hover:text-white pointer-events-auto ${
                     location.url.pathname === item.href
-                      ? "border-warning-500 text-white"
+                      ? 'border-warning-500 text-white'
                       : null
                   }`}
                 >

@@ -25,7 +25,7 @@ export default component$(() => {
           class="pointer-events-none absolute w-full h-full z-[-1] top-0 -translate-y-1/4"
         />
 
-        <div class="bg-white-gradient w-full h-full pt-8 pb-32">
+        <div class="bg-white-gradient w-full h-full pt-8 pb-48">
           <div class="container mx-auto">
             <CallOutBox>
               <h1 class="text-4xl mb-4 leading-snug">
@@ -39,11 +39,11 @@ export default component$(() => {
         </div>
       </section>
 
-      <section class="bg-warning-500 flex items-center justify-center pt-12 pb-12">
+      <section class="bg-warning-500 flex items-center justify-center pt-24 pb-24">
         <h2 class="text-2xl font-header font-semibold">Businesses for Sale</h2>
       </section>
 
-      <section class="pt-12 pb-12 flex items-center justify-center flex-col gap-12 container mx-auto">
+      <section class="pt-24 pb-24 flex items-center justify-center flex-col gap-12 container mx-auto">
         <h3 class="font-header font-semibold text-2xl">
           We make deals happen by
         </h3>
@@ -128,8 +128,8 @@ export default component$(() => {
         </div>
       </section>
 
-      <section class="bg-warning-500">
-        <div class="container mx-auto flex items-center justify-center pt-12 pb-12 flex-col gap-8">
+      <section class="bg-warning-500 pt-24 pb-24">
+        <div class="container mx-auto flex items-center justify-center flex-col gap-8">
           <h4 class="text-2xl font-header font-semibold">Why work with us?</h4>
           <p>
             We believe in the power of collaboration. Everyone in our network
@@ -152,9 +152,8 @@ export default component$(() => {
         </div>
       </section>
 
-      <section class="flex flex-col gap-4 items-center justify-center pt-8 pb-8">
+      <section class="flex flex-col gap-4 items-center justify-center pt-24 pb-24">
         <p class="font-header font-semibold text-2xl">Our Team Leaders</p>
-        <p>The men that make deals happen</p>
         <div class="flex gap-4">
           <div class="bg-accent-500 text-white p-8 max-w-sm flex flex-col gap-4">
             <div class="rounded-full overflow-hidden w-[250px] h-[250px] self-center">
@@ -172,10 +171,14 @@ export default component$(() => {
             </div>
             <div class="flex-1">
               <p>
-                Jeff is a retired firefighter, saved countless lives and
-                millions of dollars in damages through responsive action.
-                Through his podcast, A Father's Flame, he promotes fatherhood
-                and aids companies in achieving scalable growth.
+                Jeff served the community for 13 years as a professional
+                firefighter helping keep the community safe. In 2023, he
+                partnered with Brandon in Legends Acquisitions and also as a
+                self-funded searcher, he landed his first business acquisition
+                with a home services company. Among his other notable endeavors,
+                he is currently managing a roll-up in the home services
+                industry. And through his podcast, A Father's Flame, Jeff
+                promotes strong families and the future of America.
               </p>
             </div>
             <div class="flex text-2xl text-warning-500">
@@ -209,9 +212,9 @@ export default component$(() => {
               <p class="text-xs">Managing Partner</p>
               <p class="text-xl">Brandon Henry</p>
             </div>
-            <div>
+            <div class="flex-1">
               <p>
-                Brandon is a trusted and sought-after business broker,
+                Brandon is a trusted and sought-after business advisor,
                 specializing in Internet businesses since 2016. With extensive
                 experience in the online industry since 2010, he has a
                 reputation for efficiency, integrity, and expertise in

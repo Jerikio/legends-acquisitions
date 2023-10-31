@@ -1,10 +1,8 @@
-import { component$ } from "@builder.io/qwik";
-import { MENU } from "~/constants";
-import Logo from "./icons/logo.webp";
-import { Link } from "@builder.io/qwik-city";
-import PhoneIcon from "./icons/phone";
-import EnvelopeIcon from "./icons/envelope";
-import BuildingIcon from "./icons/building";
+import { component$ } from '@builder.io/qwik';
+import { MENU } from '~/constants';
+import Logo from './icons/logo.webp';
+import { Link } from '@builder.io/qwik-city';
+import EnvelopeIcon from './icons/envelope';
 
 export default component$(() => {
   return (
@@ -46,25 +44,7 @@ export default component$(() => {
                 <span class="text-warning-500">
                   <EnvelopeIcon />
                 </span>
-                legends.acquisitions@proton.me
-              </li>
-              <li
-                class={`border-b-2 transition-colors border-transparent flex gap-2`}
-              >
-                <span class="text-warning-500">
-                  <BuildingIcon />
-                </span>
-                72850 Icie Stravenue
-                <br />
-                New Jersey, South Lindsayhaven 94800
-              </li>
-              <li
-                class={`border-b-2 transition-colors border-transparent flex gap-2`}
-              >
-                <span class="text-warning-500">
-                  <PhoneIcon />
-                </span>
-                267-867-5309
+                info@legendsacquisitions.com
               </li>
             </ul>
           </div>
@@ -77,11 +57,11 @@ export default component$(() => {
           </span>
 
           <a
-            href="https://www.jerik.io/"
+            href="https://www.linkedin.com/in/devcshort/"
             target="_blank"
             class="hover:text-white"
           >
-            <span>Made with ♡ by Jerikio</span>
+            <span>Made with ♡ by Chris Short</span>
           </a>
         </div>
       </div>
