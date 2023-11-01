@@ -48,7 +48,7 @@ export default component$(() => {
           We make deals happen by
         </h3>
 
-        <div class="flex gap-4">
+        <div class="flex gap-4 flex-col md:flex-row">
           <ImageWithCaption src="/home_deal_1.jpeg">
             Using a collaborative approach and deep industry knowledge to bring
             parties together.
@@ -70,7 +70,7 @@ export default component$(() => {
         </div>
 
         <div class="flex gap-8 items-center justify-center">
-          <div class="flex-1">
+          <div class="flex-1 hidden md:flex">
             <Image
               layout="fullWidth"
               src="/home_buy_a_biz.jpeg"
@@ -116,7 +116,7 @@ export default component$(() => {
             <Button color="primary">Sell your Business</Button>
           </div>
 
-          <div class="flex-1">
+          <div class="hidden flex-1 md:flex">
             <Image
               layout="fullWidth"
               src="/home_buy_a_biz.jpeg"
@@ -136,7 +136,7 @@ export default component$(() => {
             will strive to find the best deal for you We make deals happen,
             together.
           </p>
-          <div class="flex gap-4">
+          <div class="flex-col flex gap-4 md:flex-row">
             <ImageWithCaption src="/home_deal_1.jpeg">
               Smooth and Easy Negotiations
             </ImageWithCaption>
@@ -154,7 +154,7 @@ export default component$(() => {
 
       <section class="flex flex-col gap-4 items-center justify-center pt-24 pb-24">
         <p class="font-header font-semibold text-2xl">Our Team Leaders</p>
-        <div class="flex gap-4">
+        <div class="flex-col flex gap-4 md:flex-row">
           <div class="bg-accent-500 text-white p-8 max-w-sm flex flex-col gap-4">
             <div class="rounded-full overflow-hidden w-[250px] h-[250px] self-center">
               <Image
