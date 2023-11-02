@@ -119,7 +119,7 @@ export default component$(() => {
           <div class="hidden flex-1 md:flex">
             <Image
               layout="fullWidth"
-              src="/home_buy_a_biz.jpeg"
+              src="/homes_complex.jpeg"
               width="640"
               height="427"
               class="shadow-bottom-right-warning"
@@ -156,10 +156,10 @@ export default component$(() => {
         <p class="font-header font-semibold text-2xl">Our Team Leaders</p>
         <div class="flex-col flex gap-4 md:flex-row">
           <div class="bg-accent-500 text-white p-8 max-w-sm flex flex-col gap-4">
-            <div class="rounded-full overflow-hidden w-[250px] h-[250px] self-center">
+            <div class="rounded-full overflow-hidden w-[250px] h-[250px] self-center bg-slate-400">
               <Image
                 layout="constrained"
-                src="/jeff.jpeg"
+                src="/jeffery.png"
                 width={395}
                 height={334}
                 class="w-full h-full"
@@ -199,10 +199,10 @@ export default component$(() => {
           </div>
 
           <div class="bg-accent-500 text-white p-8 max-w-sm flex flex-col gap-4">
-            <div class="rounded-full overflow-hidden w-[250px] h-[250px] self-center">
+            <div class="rounded-full overflow-hidden w-[250px] h-[250px] self-center bg-slate-400">
               <Image
                 layout="constrained"
-                src="/brandon.jpeg"
+                src="/brandon.png"
                 width={395}
                 height={334}
                 class="w-full h-full"

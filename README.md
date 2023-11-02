@@ -9,9 +9,6 @@
 
 - On the home page, hero image needs to be replaced with something a bit more professional
 - On the home page, the pictures with the houses need to be replaced with something that fits in with business acquisition
-- Replace the word "Broker" with "Advisor" on all pages
-- In the "About the founders" paragraph, change business brokerage to consulting???
-
 - Buy a business should have the buy a business questionaire
 - Sell a business should have the sell a business questionaire
 
