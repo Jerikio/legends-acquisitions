@@ -177,7 +177,7 @@ export default component$(() => {
         </div>
       </section>
 
-      <section class="bg-warning-500 flex items-center justify-center pt-24 pb-24">
+      <section class="bg-accent-500 flex items-center justify-center pt-24 pb-24 text-white">
         <div class="container mx-auto flex-col flex items-center justify-center text-center gap-4">
           <h2 class="text-2xl font-header font-semibold">About the Founders</h2>
           <p>

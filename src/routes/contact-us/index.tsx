@@ -9,6 +9,20 @@ export default component$(() => {
 
   return (
     <>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="//api1.verticacrm.com/bbcrm-assets/js-noconflict/galleria-1.4.2.min.js"></script>
+      <script src="//api1.verticacrm.com/bbcrm-assets/js-noconflict/galleria.classic.min.js"></script>
+      <script src="//api1.verticacrm.com/bbcrm-assets/js-noconflict/download-files.js"></script>
+      <script src="//api1.verticacrm.com/bbcrm-assets/js-noconflict/jsignature.js"></script>
+      <script src="//api1.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-constants.js"></script>
+      <script src="//api1.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-main.js"></script>
+      <script src="//api1.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-buyer-profile.js"></script>
+      <script src="//api1.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-contact-form.js"></script>
+      <script src="//api1.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-library.js"></script>
+      <script src="//api1.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-listing.js"></script>
+      <script src="//api1.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-password-reset.js"></script>
+      <script src="//api1.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-search-tool.js"></script>
+
       <section class="relative overflow-hidden">
         <Image
           layout="fullWidth"
@@ -28,6 +42,10 @@ export default component$(() => {
             </CallOutBox>
           </div>
         </div>
+      </section>
+
+      <section>
+        <bbcrm api_string="contactform"> </bbcrm>
       </section>
     </>
   );

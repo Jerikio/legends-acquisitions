@@ -39,7 +39,7 @@ export default component$(() => {
         </div>
       </section>
 
-      <section class="bg-warning-500 flex items-center justify-center pt-24 pb-24">
+      <section class="bg-accent-500 flex items-center justify-center pt-24 pb-24 text-white">
         <h2 class="text-2xl font-header font-semibold">Businesses for Sale</h2>
       </section>
 
@@ -128,7 +128,7 @@ export default component$(() => {
         </div>
       </section>
 
-      <section class="bg-warning-500 pt-24 pb-24">
+      <section class="bg-accent-500 pt-24 pb-24 text-white">
         <div class="container mx-auto flex items-center justify-center flex-col gap-8">
           <h4 class="text-2xl font-header font-semibold">Why work with us?</h4>
           <p>
