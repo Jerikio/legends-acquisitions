@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Michroma&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
 
 /**
  * Tailwind CSS imports
@@ -13,4 +13,49 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100vh;
+}
+
+#bbcrm-contact-button {
+  /** main button */
+  padding: theme(spacing.2);
+  padding-top: theme(spacing.3);
+  padding-bottom: theme(spacing.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: theme(colors.primary.500);
+  color: theme(colors.white);
+  max-width: 200px;
+  margin-top: theme(spacing.2);
+}
+
+.bbcrm-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: theme(spacing.4);
+}
+
+.form-horizontal {
+  /* main holder */
+  display: flex;
+  flex-direction: column;
+  gap: theme(spacing.2);
+}
+
+.control-label {
+  /* for lables */
+  color: theme(colors.accent.500);
+  font-size: theme(fontSize.sm);
+  font-family: theme(fontFamily.header);
+}
+.form-group {
+  /* full form group */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  /* Input box */
+  border-bottom: 1px solid theme(colors.accent.500);
 }

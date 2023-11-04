@@ -4,8 +4,7 @@ import Button from '~/components/button';
 import CallOutBox from '~/components/call-out-box';
 import Divider from '~/components/divider';
 import ImageWithCaption from '~/components/image-with-caption';
-import { TbBrandFacebook, TbBrandLinkedin } from '@qwikest/icons/tablericons';
-import { Link } from '@builder.io/qwik-city';
+import OurTeam from '~/components/our-team';
 
 export default component$(() => {
   useImageProvider({
@@ -28,11 +27,13 @@ export default component$(() => {
         <div class="bg-white-gradient w-full h-full pt-8 pb-48">
           <div class="container mx-auto">
             <CallOutBox>
-              <h1 class="text-4xl mb-4 leading-snug">
+              <h1 class="text-4xl mb-4 leading-snug font-header">
                 At Legends Acquisitions, we like to think outside the box.
               </h1>
               <div class="text-2xl max-w-xs">
-                <Button color="primary">Get Started!</Button>
+                <Button color="primary" href="/contact-us">
+                  Get Started!
+                </Button>
               </div>
             </CallOutBox>
           </div>
@@ -40,7 +41,7 @@ export default component$(() => {
       </section>
 
       <section class="bg-accent-500 flex items-center justify-center pt-24 pb-24 text-white">
-        <h2 class="text-2xl font-header font-semibold">Businesses for Sale</h2>
+        {/* <h2 class="text-2xl font-header font-semibold">Businesses for Sale</h2> */}
       </section>
 
       <section class="pt-24 pb-24 flex items-center justify-center flex-col gap-12 container mx-auto">
@@ -65,7 +66,7 @@ export default component$(() => {
           </ImageWithCaption>
         </div>
 
-        <div class="h-1 w-1/12">
+        <div class="h-1 w-1/12 mt-8 mb-8">
           <Divider />
         </div>
 
@@ -94,7 +95,9 @@ export default component$(() => {
               will have the peace of mind that the business you are buying is
               profitable.
             </p>
-            <Button color="primary">Buy a Business</Button>
+            <Button color="primary" href="/buy-a-business">
+              Buy a Business
+            </Button>
           </div>
         </div>
 
@@ -113,7 +116,9 @@ export default component$(() => {
               growing the business will be valued because we know that every
               part of it counts.
             </p>
-            <Button color="primary">Sell your Business</Button>
+            <Button color="primary" href="/sell-a-business">
+              Sell your Business
+            </Button>
           </div>
 
           <div class="hidden flex-1 md:flex">
@@ -152,93 +157,7 @@ export default component$(() => {
         </div>
       </section>
 
-      <section class="flex flex-col gap-4 items-center justify-center pt-24 pb-24">
-        <p class="font-header font-semibold text-2xl">Our Team Leaders</p>
-        <div class="flex-col flex gap-4 md:flex-row">
-          <div class="bg-accent-500 text-white p-8 max-w-sm flex flex-col gap-4">
-            <div class="rounded-full overflow-hidden w-[250px] h-[250px] self-center bg-slate-400">
-              <Image
-                layout="constrained"
-                src="/jeffery.png"
-                width={395}
-                height={334}
-                class="w-full h-full"
-              />
-            </div>
-            <div>
-              <p class="text-xs">Managing Partner</p>
-              <p class="text-xl">Jeff Short</p>
-            </div>
-            <div class="flex-1">
-              <p>
-                Jeff served the community for 13 years as a professional
-                firefighter helping keep the community safe. In 2023, he
-                partnered with Brandon in Legends Acquisitions and also as a
-                self-funded searcher, he landed his first business acquisition
-                with a home services company. Among his other notable endeavors,
-                he is currently managing a roll-up in the home services
-                industry. And through his podcast, A Father's Flame, Jeff
-                promotes strong families and the future of America.
-              </p>
-            </div>
-            <div class="flex text-2xl text-warning-500">
-              <Link
-                href="https://www.facebook.com/thejeffshort"
-                target="_blank"
-              >
-                <TbBrandFacebook />
-              </Link>
-
-              <Link
-                href="https://www.linkedin.com/in/thejeffshort/"
-                target="_blank"
-              >
-                <TbBrandLinkedin />
-              </Link>
-            </div>
-          </div>
-
-          <div class="bg-accent-500 text-white p-8 max-w-sm flex flex-col gap-4">
-            <div class="rounded-full overflow-hidden w-[250px] h-[250px] self-center bg-slate-400">
-              <Image
-                layout="constrained"
-                src="/brandon.png"
-                width={395}
-                height={334}
-                class="w-full h-full"
-              />
-            </div>
-            <div>
-              <p class="text-xs">Managing Partner</p>
-              <p class="text-xl">Brandon Henry</p>
-            </div>
-            <div class="flex-1">
-              <p>
-                Brandon is a trusted and sought-after business advisor,
-                specializing in Internet businesses since 2016. With extensive
-                experience in the online industry since 2010, he has a
-                reputation for efficiency, integrity, and expertise in
-                government contracting.
-              </p>
-            </div>
-            <div class="flex text-2xl text-warning-500">
-              <Link
-                href="https://www.facebook.com/brandon.henry.1840"
-                target="_blank"
-              >
-                <TbBrandFacebook />
-              </Link>
-
-              <Link
-                href="https://www.linkedin.com/in/brandon-henry-570460a8/"
-                target="_blank"
-              >
-                <TbBrandLinkedin />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
+      <OurTeam />
     </>
   );
 });
