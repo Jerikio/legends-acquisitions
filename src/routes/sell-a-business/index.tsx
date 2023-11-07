@@ -1,10 +1,16 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, useVisibleTask$ } from '@builder.io/qwik';
 import { Image, useImageProvider } from 'qwik-image';
 import CallOutBox from '~/components/call-out-box';
 
 export default component$(() => {
   useImageProvider({
     resolutions: [1920],
+  });
+
+  useVisibleTask$(() => {
+    // @ts-ignore
+    // eslint-disable-next-line
+    window?.renderTags();
   });
 
   return (
