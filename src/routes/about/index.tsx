@@ -213,8 +213,7 @@ export default component$(() => {
           </p>
           <p>
             Welcome to Legends Acquisitions, where <em>we</em> make deals
-            happen,
-            <em>together</em>.
+            happen, <em>together</em>.
           </p>
         </div>
       </section>

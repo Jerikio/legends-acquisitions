@@ -1,16 +1,11 @@
-import { component$, useVisibleTask$ } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 import { Image, useImageProvider } from 'qwik-image';
+import Button from '~/components/button';
 import CallOutBox from '~/components/call-out-box';
 
 export default component$(() => {
   useImageProvider({
     resolutions: [1920],
-  });
-
-  useVisibleTask$(() => {
-    // @ts-ignore
-    // eslint-disable-next-line
-    window?.renderTags();
   });
 
   return (
@@ -46,13 +41,19 @@ export default component$(() => {
                 With our vast network of buyers, sellers, deal finders, and
                 everyone in between, we can make this deal happen, together.
               </p>
+
+              <div class="mt-4 font-header">
+                <Button
+                  color="primary"
+                  href="https://forms.gle/nsoSnfLJvYfgGFkc7"
+                  target="_blank"
+                >
+                  Get started!
+                </Button>
+              </div>
             </CallOutBox>
           </div>
         </div>
-      </section>
-
-      <section class="p-2">
-        <bbcrm api_string="customform" formid="5"></bbcrm>
       </section>
     </>
   );

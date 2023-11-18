@@ -4,6 +4,7 @@ import { Link } from '@builder.io/qwik-city';
 interface IProps {
   color: 'default' | 'primary' | 'secondary' | 'black';
   href?: string;
+  target?: string;
 }
 
 export default component$((props: IProps) => {
@@ -19,7 +20,7 @@ export default component$((props: IProps) => {
 
   if (props.href) {
     return (
-      <Link href={props.href} class={classlist}>
+      <Link href={props.href} class={classlist} target={props.target}>
         <Slot />
       </Link>
     );

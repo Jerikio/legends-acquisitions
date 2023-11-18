@@ -9,17 +9,14 @@ export const MENU = [
   },
   {
     content: 'Buy a business',
-    href: 'https://forms.gle/z2fz4BJoTJkBC8238',
-    target: '_blank',
+    href: '/buy-a-business',
   },
   {
     content: 'Sell a business',
-    href: 'https://forms.gle/LWoF3STUBuGg8rfU7',
-    target: '_blank',
+    href: '/sell-a-business',
   },
   {
     content: 'Contact us',
-    href: 'https://forms.gle/Y6SakTJwf8hVsH5b6',
-    target: '_blank',
+    href: '/contact-us',
   },
 ];

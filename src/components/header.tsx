@@ -149,7 +149,6 @@ export default component$(() => {
                       ? 'border-warning-500 text-white'
                       : null
                   }`}
-                  target={item.target}
                 >
                   {item.content}
                 </Link>
