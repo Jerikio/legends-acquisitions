@@ -23,19 +23,6 @@ export default component$(() => {
         <link rel="manifest" href="/manifest.json" />
         <RouterHead />
         <ServiceWorkerRegister />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="https://api1.verticacrm.com/bbcrm-assets/js-noconflict/galleria-1.4.2.min.js"></script>
-        <script src="https://api1.verticacrm.com/bbcrm-assets/js-noconflict/galleria.classic.min.js"></script>
-        <script src="https://api1.verticacrm.com/bbcrm-assets/js-noconflict/download-files.js"></script>
-        <script src="https://api1.verticacrm.com/bbcrm-assets/js-noconflict/jsignature.js"></script>
-        <script src="https://api1.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-constants.js"></script>
-        <script src="https://api1.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-main.js"></script>
-        <script src="https://api1.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-buyer-profile.js"></script>
-        <script src="https://api1.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-contact-form.js"></script>
-        <script src="https://api1.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-library.js"></script>
-        <script src="https://api1.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-listing.js"></script>
-        <script src="https://api1.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-password-reset.js"></script>
-        <script src="https://api1.verticacrm.com/bbcrm-assets/js-noconflict/bbcrm-search-tool.js"></script>
       </head>
       <body lang="en">
         <RouterOutlet />
