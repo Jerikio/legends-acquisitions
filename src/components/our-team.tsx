@@ -16,7 +16,7 @@ export default component$(() => {
           <div class="rounded-full overflow-hidden w-[250px] h-[250px] self-center bg-slate-400">
             <Image
               layout="constrained"
-              src="/jeffery.png"
+              src="/jeff_new.png"
               width={395}
               height={334}
               class="w-full h-full"
